@@ -1,31 +1,34 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./Navbar";
-import HomePage from "./HomePage";
-import PublishPage from "./PublishPage";
-import PostDetailPage from "./PostDetailPage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Menu from "./components/Navbar";
+import Estudantes from "./pages/Estudantes";
+import Estudante from "./pages/Estudante";
+import Professores from "./pages/Professores";
+import Professor from "./pages/Professor";
+import Casas from "./pages/Casas";
+import Casa from "./pages/Casa";
+import Magias from "./pages/Magias";
+import Magia from "./pages/Magia";
+import Personagens from "./pages/Personagens";
+import Personagem from "./pages/Pesonagem";
 
-function App() {
-  const [posts, setPosts] = useState([]);
-  useEffect(() => {
-    fetch("http://localhost:5000/posts")
-      .then((response) => response.json())
-      .then((data) => setPosts(data))
-      .catch((error) => console.error("Erro ao carregar publicações:", error));
-  }, []);
-
+const App = () => {
   return (
     <Router>
-      <div className="app">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage posts={posts} />} />
-          <Route path="/publish" element={<PublishPage setPosts={setPosts} />} />
-          <Route path="/post/:id" element={<PostDetailPage />} />
-        </Routes>
-      </div>
+      <Menu />
+      <Routes>
+      <Route path="/personagens" element={<Personagens />} />
+      <Route path="/personagem/:id" element={<Personagem />} />
+        <Route path="/estudantes" element={<Estudantes />} />
+        <Route path="/estudante/:id" element={<Estudante />} />
+        <Route path="/professores" element={<Professores />} />
+        <Route path="/professor/:id" element={<Professor />} />
+        <Route path="/casas" element={<Casas />} />
+        <Route path="/casas/:id" element={<Casa />} />
+        <Route path="/magias" element={<Magias />} />
+        <Route path="/magias/:id" element={<Magia />} />
+      </Routes>
     </Router>
   );
-}
+};
 
 export default App;

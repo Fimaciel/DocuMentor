@@ -1,0 +1,115 @@
+.hogwarts-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('https://wallpapershome.com/images/pages/pic_h/26321.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .hogwarts-title {
+    font-family: 'Harry Potter', cursive;
+    text-align: center;
+    color: #efcb009c;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hogwarts-title span {
+    font-size: 3.5rem;
+    line-height: 1;
+    letter-spacing: 3px;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+    }
+    to {
+      text-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700;
+    }
+  }
+  
+  .house-card {
+    background: rgba(0, 0, 0, 0.7) !important;
+    border: 2px solid;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .house-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+  }
+  
+  .card-image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-image {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    filter: grayscale(20%) contrast(110%);
+  }
+  
+  .house-card:hover .card-image {
+    transform: scale(1.05);
+  }
+  
+  .house-crest {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 215, 0, 0.1);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: rotate(45deg);
+  }
+  
+  .house-name {
+    font-family: 'Harry Potter', cursive;
+    font-size: 2rem !important;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  
+  .btn-detalles {
+    color: white !important;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+  }
+  
+  .btn-detalles:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    filter: brightness(110%);
+  }
+  
+  @keyframes sparkle {
+    0% { opacity: 0; transform: scale(0); }
+    50% { opacity: 1; }
+    100% { opacity: 0; transform: scale(2); }
+  }
+  
+  .house-card::after {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: sparkle 1.5s infinite;
+    pointer-events: none;
+  }
+
+  .spinner-gold {
+    color: #ffd700 !important;
+  }

@@ -1,0 +1,58 @@
+/* Casa.css */
+.card-informacoes-casa {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 20px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.brasao-casa {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+.card-personagem {
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-personagem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.emblema-caracteristica {
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid;
+  transition: all 0.3s ease;
+}
+
+.titulo-secao {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Harry Potter', cursive;
+  letter-spacing: 2px;
+}
+
+.spinner-ouro {
+  color: #D3A625 !important;
+  width: 4rem;
+  height: 4rem;
+}
+
+@keyframes flutuar {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
