@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/DocuMentor/documentor/static/css/main.89b3b844.css",
-    "main.js": "/DocuMentor/documentor/static/js/main.0c7c6de3.js",
-    "index.html": "/DocuMentor/documentor/index.html",
-    "main.89b3b844.css.map": "/DocuMentor/documentor/static/css/main.89b3b844.css.map",
-    "main.0c7c6de3.js.map": "/DocuMentor/documentor/static/js/main.0c7c6de3.js.map"
+    "main.css": "/DocuMentor/static/css/main.89b3b844.css",
+    "main.js": "/DocuMentor/static/js/main.0c7c6de3.js",
+    "index.html": "/DocuMentor/index.html",
+    "main.89b3b844.css.map": "/DocuMentor/static/css/main.89b3b844.css.map",
+    "main.0c7c6de3.js.map": "/DocuMentor/static/js/main.0c7c6de3.js.map"
   },
   "entrypoints": [
     "static/css/main.89b3b844.css",
