@@ -1,0 +1,99 @@
+.pagina-estudantes {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url('https://i.pinimg.com/736x/20/3c/63/203c6389d1338db3a01a222c368ba884.jpg');
+    min-height: 100vh;
+    padding: 4rem 0;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .titulo-principal {
+    font-family: 'Harry Potter', cursive;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+  
+  .linha-divisoria {
+    width: 300px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ffffff, transparent);
+    margin: 1rem auto;
+  }
+  
+  .card-estudante {
+    border-radius: 15px;
+    color: #ffffff;
+    overflow: hidden;
+    min-height: 250px;
+  }
+  
+  .nome-estudante {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .icone-estudante {
+    margin-right: 0.5rem;
+    color: #ffffff;
+  }
+  
+  .casa-estudante {
+    display: block;
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-detalhes-estudante {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    color: #ffffff !important;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .btn-detalhes-estudante:hover {
+    filter: brightness(115%);
+    transform: scale(1.05);
+  }
+  
+  .barra-busca {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .input-busca-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icone-busca {
+    position: absolute;
+    left: 20px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    z-index: 2;
+  }
+  
+  .input-busca {
+    width: 100%;
+    padding: 15px 20px 15px 50px;
+    background: rgba(40, 40, 40, 0.9);
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .input-busca:focus {
+    background: rgba(60, 60, 60, 0.9);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    outline: none;
+  }

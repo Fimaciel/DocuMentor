@@ -1,0 +1,118 @@
+.pagina-professores {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+                url('https://i.pinimg.com/736x/20/3c/63/203c6389d1338db3a01a222c368ba884.jpg');
+    min-height: 100vh;
+    padding: 4rem 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .titulo-principal {
+    font-family: 'Harry Potter', cursive;
+    color: #ffd700;
+    text-shadow: 0 0 15px rgba(255, 217, 0, 0.863);
+  }
+  
+  .titulo-principal span {
+    display: inline-block;
+    padding: 0 2rem;
+  }
+  
+  .linha-divisoria {
+    width: 300px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ffd700, transparent);
+    margin: 1rem auto;
+  }
+  
+  .card-professor {
+    background: rgba(25, 25, 25, 0.9) !important;
+    border: 2px solid #ffd70033;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    color: #fff;
+    backdrop-filter: blur(5px);
+  }
+  
+  .card-professor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(89, 0, 255, 0.3);
+    border-color: #8400ff;
+  }
+  
+  .icone-professor {
+    font-size: 2rem;
+    color: #8400ff;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .nome-professor {
+    font-family: 'Harry Potter', serif;
+    font-size: 1.4rem;
+  }
+  
+  .casa-professor {
+    display: block;
+    background: rgba(255, 215, 0, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .btn-detalhes-professor {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(45deg, #ae00ff, #ae00ff);
+    color: #2a2a2a !important;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .btn-detalhes-professor:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  }
+  
+  .barra-busca {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .input-busca-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-busca {
+    width: 100%;
+    padding: 15px 20px 15px 50px;
+    background: rgba(40, 40, 40, 0.9);
+    border: 2px solid #ffd700;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .input-busca:focus {
+    background: rgba(60, 60, 60, 0.9);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    outline: none;
+  }
+  
+  .text-center h3 {
+    font-family: 'Harry Potter', cursive;
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  }

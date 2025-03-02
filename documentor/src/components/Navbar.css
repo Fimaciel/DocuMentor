@@ -1,66 +1,91 @@
-.custom-navbar {
-    background: linear-gradient(145deg, #0a1929, #102542) !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border-bottom: 2px solid #1e90ff !important;
-    padding: 1rem 0;
+.hogwarts-navbar {
+  background: linear-gradient(145deg, #0a1929, #102542);
+  border-bottom: 2px solid #1e90ff !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 0;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.brand-icon {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
+}
+
+.brand-text {
+  font-family: 'Harry Potter', cursive;
+  font-size: 1.8rem;
+  background: linear-gradient(45deg, #ffd700, #daa520);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link-item {
+  color: #e0f2ff !important;
+  margin: 0 15px;
+  padding: 10px 15px !important;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link-item:hover {
+  color: #ffffff !important;
+  background: rgba(30, 144, 255, 0.1);
+}
+
+.nav-icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.sparkle {
+  animation: sparkle 5.5s infinite;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.nav-link-item::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffd700;
+  transition: width 0.3s ease;
+}
+
+.nav-link-item:hover::before {
+  width: 100%;
+}
+
+@keyframes sparkle {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 991px) {
+  .navbar-links {
+    padding-top: 1rem;
   }
   
-  .navbar-brand .brand-text {
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: 700;
-    font-size: 1.8rem;
-    background: linear-gradient(45deg, #1e90ff, #00bfff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  .nav-link-item {
+    margin: 8px 0 !important;
+    justify-content: center;
   }
   
-  .navbar-links .nav-link-item {
-    color: #e0f2ff !important;
-    font-weight: 500;
-    margin: 0 15px;
-    padding: 8px 15px !important;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    position: relative;
+  .brand-text {
+    font-size: 1.5rem;
   }
-  
-  .navbar-links .nav-link-item::before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #1e90ff;
-    transition: width 0.3s ease;
-  }
-  
-  .navbar-links .nav-link-item:hover {
-    color: #ffffff !important;
-    transform: translateY(-2px);
-  }
-  
-  .navbar-links .nav-link-item:hover::before {
-    width: 100%;
-  }
-  
-  .navbar-toggle {
-    border-color: rgba(255, 255, 255, 0.5) !important;
-  }
-  
-  @media (max-width: 991px) {
-    .navbar-links {
-      padding-top: 1rem;
-    }
-    
-    .nav-link-item {
-      margin: 8px 0 !important;
-      text-align: center;
-    }
-    
-    .navbar-brand {
-      margin-right: 0;
-    }
-  }
+}

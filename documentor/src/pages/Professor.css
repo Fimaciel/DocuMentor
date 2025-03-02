@@ -1,0 +1,134 @@
+.pagina-professor {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url('https://i.pinimg.com/736x/20/3c/63/203c6389d1338db3a01a222c368ba884.jpg');
+    min-height: 100vh;
+    padding: 4rem 0;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .btn-voltar {
+    color: #ffd700;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-voltar:hover {
+    color: #fff;
+    transform: translateX(-5px);
+  }
+  
+  .card-professor {
+    background: rgba(30, 30, 30, 0.95) !important;
+    border-width: 3px;
+    border-radius: 15px;
+    overflow: hidden;
+    color: #e0e0e0;
+  }
+  
+  .imagem-container {
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+  }
+  
+  .imagem-professor {
+    border-radius: 10px;
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
+  .titulo-professor {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .icone-titulo {
+    font-size: 2rem;
+    color: currentColor;
+  }
+  
+  .detalhes-lista {
+    background: transparent !important;
+  }
+  
+  .detalhe-item {
+    background: transparent !important;
+    color: #e0e0e0 !important;
+    border-color: rgba(255, 215, 0, 0.1) !important;
+    font-size: 1.1rem;
+    padding: 1rem !important;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .icone-detalhe {
+    color: #ffd700;
+    min-width: 25px;
+  }
+  
+  .erro-container {
+    text-align: center;
+    padding: 4rem;
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 15px;
+    border: 2px solid #740001;
+  }
+  
+  .spinner-ouro {
+    color: #ffd700 !important;
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  @media (max-width: 768px) {
+    .card-professor {
+      flex-direction: column !important;
+    }
+    
+    .imagem-container {
+      padding: 1rem;
+    }
+    
+    .titulo-professor {
+      font-size: 1.8rem;
+    }
+  }
+
+.detalhe-item div {
+    margin-left: 1.5rem;
+    color: #cccccc;
+  }
+  
+  .badge-secondary {
+    background-color: #6c757d !important;
+    font-size: 0.75rem;
+    vertical-align: middle;
+  }
+  
+  .detalhes-lista .badge {
+    font-size: 0.9rem;
+    padding: 0.5em 0.7em;
+  }
+  
+  .detalhe-item strong {
+    min-width: 120px;
+    display: inline-block;
+    color: #ffd700;
+  }
+  
+  .row .col-md-6 {
+    border-right: 1px solid rgba(255, 215, 0, 0.1);
+  }
+  
+  .row .col-md-6:last-child {
+    border-right: none;
+  }
